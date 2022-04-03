@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moth Man</title>
+    <style>
+      body {
+        background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/464/original/60-602430_fog-forest-wallpaper-mural-hd-png-download_%282%29.jpg?1637550170);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 20%;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        border: 4px solid #680747;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 auto;
+        color: #2c5d63;
+      }
+      h2 {
+        text-align: center;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        color: #2c5d63;
+      }
+      a {
+        text-align: left;
+        max-width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      footer {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #2c5d63;
+        border: 1px solid #2c5d63;
+        padding: 10px;
+        line-height: 22px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bolder;
+      }
+      button:hover {
+        background: white;
+        color: #2c5d63;
+        border: 1px solid #2c5d63;
+      }
+      .paragraph {
+        color: #680747;
+        line-height: 1.25;
+        font-size: 20px;
+      }
+      .codedBy {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 20px;
+        padding: 20px;
+      }
+      .footer {
+        text-align: center;
+        color: #680747;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Have You Seen the Mothman?</h1>
+    <br />
+    <h2>The Man the Myth and the Legend of Point Pleasant, West Virginia</h2>
+    <hr />
+    <img
+    src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/466/original/396-3961654_mothman-png-image-background-mothman-real-life-sightings_%282%29.jpg?1637551586
+    alt="Mothman" />
+    <hr />
+    <div class="paragraph">
+      <p>
+        <strong>
+          The Mothman of Point Pleasant, West Virginia is a creature of infamous
+          reputation. That for decades has been the center of fear, speculation
+          and surprisingly, tourism to hundreds of locals since the mid 60's.
+          First seen following two young couples in their car, to being blamed
+          for the Silver Bridge collapse claiming 46 lives. Though the Mothman
+          is steeped in mystery it has become an unusual beacon of revenue for
+          the town where it hosts a Mothman festival every year in September. In
+          recent years it seems Mothman has expanded his territory with
+          sightings being reported in Texas and as far as Moscow. With so little
+          known of this creature and its ever expanding reach there's no telling
+          where it will been seen next.
+          <em>So... Have you seen the Mothman?</em>
+        </strong>
+      </p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Mothman" target="blank"
+      >Learn more about Mothman
+    </a>
+    <br />
+    <button>Find Mothman</button>
+    <div class="codedby">
+      <span class="footer"> Coded by:</span> Tiffany Asbell
+    </div>
+    <script>
+      function findMM() {
+        let name = prompt("What is your name?");
+        let location = prompt("Where do you live?");
+        let friend = prompt("What is your Cryptid?");
+        if (friend === "mothman") {
+          alert(`That's awesome ${name}! happy searching for ${friend} 👽!`);
+        } else {
+          alert(`That's awesome ${name}! happy searching for ${friend} 🦇!`);
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", findMM);
+    </script>
+  </body>
+</html>
